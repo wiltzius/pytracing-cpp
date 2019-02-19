@@ -6,3 +6,5 @@ MANIFEST
 _build
 _generate
 build
+var
+*.out
