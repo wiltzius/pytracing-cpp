@@ -148,10 +148,6 @@ PYBIND11_MODULE(python_example, m)
            subtract
     )pbdoc";
 
-  // m.def("tracer", &tracer, R"pbdoc(
-  //     Tracer for `sys.setprofile`
-  // )pbdoc");
-
   py::class_<Profiler>(m, "Profiler")
       .def(py::init<py::str>())
       .def("tracer", &Profiler::tracer);
